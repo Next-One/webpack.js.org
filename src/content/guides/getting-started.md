@@ -239,6 +239,22 @@ module.exports = {
 };
 ```
 
+__dist/index.html__
+
+``` diff
+  <!doctype html>
+  <html>
+   <head>
+     <title>起步</title>
+-    <script src="https://unpkg.com/lodash@4.16.6"></script>
+   </head>
+   <body>
+-    <script src="main.js"></script>
++    <script src="bundle.js"></script>
+   </body>
+  </html>
+```
+
 现在，让我们通过新配置文件再次执行构建：
 
 ``` bash
